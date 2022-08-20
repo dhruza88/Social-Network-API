@@ -73,11 +73,11 @@ updateUser(req, res) {
 
 // Add an friend to a user
 addFriend(req, res) {
-    console.log('You are adding an assignment');
+    console.log('You are adding a friend');
     console.log(req.body);
     User.findOneAndUpdate(
         { _id: req.params.userId },
-        { $addToSet: { assignments: req.body } },
+        { $addToSet: { friends: req.params.friendId } },
         { runValidators: true, new: true }
     )
         .then((user) =>
@@ -93,7 +93,7 @@ addFriend(req, res) {
 removeFriend(req, res) {
     User.findOneAndUpdate(
         { _id: req.params.userId },
-        { $pull: { assignment: { assignmentId: req.params.assignmentId } } },
+        { $pull: { friends: req.params.friendId } },
         { runValidators: true, new: true }
     )
         .then((user) =>
