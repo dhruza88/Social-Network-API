@@ -22,7 +22,7 @@ module.exports = {
             // .populate("thoughts")
             .then((user) =>
                 !user
-                    ? res.status(404).json({ message: 'No user with that ID' })
+                    ? res.status(404).json({ message: 'No user found with that ID' })
                     : res.json(user)
             )
             .catch((err) => {
@@ -41,7 +41,7 @@ module.exports = {
         User.findOneAndRemove({ _id: req.params.userId })
             .then( (user) => {
             if (!user) {
-                return res.status(404).json({ message: "No user with this id!" });
+                return res.status(404).json({ message: "No user found with this ID!" });
             }
 
                 // BONUS: Get ids of user's `thoughts` and delete them all
@@ -65,7 +65,7 @@ updateUser(req, res) {
     )
         .then((user) =>
             !user
-                ? res.status(404).json({ message: 'No user with this id!' })
+                ? res.status(404).json({ message: 'No user found with this ID!' })
                 : res.json(user)
         )
         .catch((err) => res.status(500).json(err));
@@ -84,7 +84,7 @@ addFriend(req, res) {
             !user
                 ? res
                     .status(404)
-                    .json({ message: 'No user found with that ID :(' })
+                    .json({ message: 'No user found with that ID!' })
                 : res.json(user)
         )
         .catch((err) => res.status(500).json(err));
@@ -100,7 +100,7 @@ removeFriend(req, res) {
             !user
                 ? res
                     .status(404)
-                    .json({ message: 'No user found with that ID :(' })
+                    .json({ message: 'No user found with that ID!' })
                 : res.json(user)
         )
         .catch((err) => res.status(500).json(err));
