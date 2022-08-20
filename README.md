@@ -19,7 +19,11 @@ Using Mongo DB be able to create the models, routes, connections to allow for a 
 
 
 ## Installation
-npm i mongo, npm i express, npm i mongoose
+npm i mongo
+
+npm i express
+
+npm i mongoose
 
 ## Usage
 After downloading the repo, you would need to npm i to install all correct packages. Then run node server.js to connect to the database. Afterwards opening insomnia with the correct endpoints to perform all the functions.
