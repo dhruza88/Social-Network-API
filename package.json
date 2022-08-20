@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/dhruza88/Social-Network-API/issues"
   },
-  "homepage": "https://github.com/dhruza88/Social-Network-API#readme"
+  "homepage": "https://github.com/dhruza88/Social-Network-API#readme",
+  "dependencies": {
+    "db": "^3.3.1",
+    "express": "^4.18.1",
+    "mongo": "^0.1.0",
+    "mongoose": "^6.5.2"
+  }
 }
