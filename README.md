@@ -1,6 +1,9 @@
 
         # Social Media API
 
+
+**KEYNOTE Since taking the video, i have updated the routes to populate all relevant information both on get all users, and get user, i will be attaching screenshots**
+
 ## Description
 Using Mongo DB be able to create the models, routes, connections to allow for a user to be able to hit all 14 endpoints. Therefore allowing a user to create a new user, to create a new thought, to add a reaction, to add a friend and so much more.
 
