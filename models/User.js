@@ -30,7 +30,7 @@ const userSchema = new Schema(
     },
     {
         
-// TODO: add in virtual called friendCount, retrieving the length of user's friends
+
         toJSON: {
             virtuals:true,
         },
