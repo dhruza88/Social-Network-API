@@ -59,5 +59,12 @@ If any issue with google drive video, i also uploaded zipped version here below:
 
 https://github.com/dhruza88/Social-Network-API/blob/main/server.js%20-%20Social-Network-API%20-%20Visual%20Studio%20Code%202022-08-19%2020-02-24.zip
 
+ScreenShots Below:
+
+![thought-ss](https://user-images.githubusercontent.com/106774335/185815900-cd9f31e3-2f20-4f1b-a85d-d1225e736c20.jpg)
+
+
+![friend-ss](https://user-images.githubusercontent.com/106774335/185815923-7142695e-9f32-4d7d-9d32-75ffee0e729d.jpg)
+
 
 
