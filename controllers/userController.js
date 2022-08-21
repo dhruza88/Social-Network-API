@@ -4,10 +4,9 @@ const { User, Thought } = require('../models');
 module.exports = {
     // Get all students
     getUsers(req, res) {
-        User.find()
+        User.find({})
             .populate({ path: "friends", select: "-__v" })
-            .populate({ path: "thoughts", select: "-__v" })
-            .select("-__v")
+            .populate({ path: "thoughts", select: "-__v"})
             .then((user) => {
                 res.json(user)
             })
@@ -20,9 +19,10 @@ module.exports = {
     getSingleUser(req, res) {
         User.findOne({ _id: req.params.userId })
             // .populate("friends")
-            .populate({ path: "friends", select: "-__v" })
-            .populate({ path: "thoughts", select: "-__v" })
             .select('-__v')
+            .populate({ path: "friends", select: "-__v" })
+            .populate("thoughts")
+           
 
             .then((user) =>
                 !user

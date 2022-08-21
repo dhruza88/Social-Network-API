@@ -4,6 +4,8 @@ const routes = require('./routes');
 
 const cwd = process.cwd();
 
+console.log("PID", process.pid)
+
 const PORT = process.env.PORT || 3001;
 const app = express();
 

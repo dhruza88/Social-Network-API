@@ -2,7 +2,8 @@ const { Thought, User, Reaction} = require('../models');
 
 module.exports = {
     getThoughts(req, res) {
-        Thought.find()
+        Thought.find({})
+          .select('-__v')
           .then((thoughts) => res.json(thoughts))
           .catch((err) => res.status(500).json(err));
       },
@@ -19,8 +20,22 @@ module.exports = {
       },
       // Create a thought
       createThought(req, res) {
-        Thought.create(req.body)
-          .then((thought) => res.json(thought))
+        console.log(req.body);
+        Thought.create({
+          thoughtText: req.body.thoughtText,
+          username: req.body.username,
+        })
+          .then((thought) => {
+            User.findOneAndUpdate({_id: req.body._id}, { thoughts: [thought._id] })
+            .then(()=>{
+              res.json(thought) 
+            }).
+            catch((error) => {
+              console.log(error);
+              return res.status(500).json({msg:" unable to add thought to user", error})
+            })
+          })
+        
           .catch((err) => {
             console.log(err);
             return res.status(500).json(err);
