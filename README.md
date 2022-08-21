@@ -66,5 +66,9 @@ Updated Screenshots Below:
 
 ![friend-ss](https://user-images.githubusercontent.com/106774335/185815923-7142695e-9f32-4d7d-9d32-75ffee0e729d.jpg)
 
+Below is after i turned virtual back on for reaction count
+
+![reaction-count-ss](https://user-images.githubusercontent.com/106774335/185816053-c43a3654-cbfe-4cfd-ae71-858190da903e.jpg)
+
 
 
