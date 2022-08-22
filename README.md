@@ -2,7 +2,7 @@
         # Social Media API
 
 
-**KEYNOTE Since uploading new video i realize when i went to delete a reaction i put in the wrong ID so it looks like it didn't work, i had copied userId and not reactionID and that is why it broke, but if ran itself it does indeed work.
+**KEYNOTE Since uploading new video i realize when i went to delete a reaction i put in the wrong ID so it looks like it didn't work, i had copied userId and not reactionID and that is why it broke, but if ran itself it does indeed work.**
 
 ## Description
 Using Mongo DB be able to create the models, routes, connections to allow for a user to be able to hit all 14 endpoints. Therefore allowing a user to create a new user, to create a new thought, to add a reaction, to add a friend and so much more.
