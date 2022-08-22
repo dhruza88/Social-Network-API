@@ -53,11 +53,11 @@ davidhruza@gmail.com
 
 **KEYNOTE Link Below to Video Demonstration:
 
-https://drive.google.com/file/d/1dgRadPEfgyq9ELoz-bKzoqlW6SU-Q1bd/view?usp=sharing
+(https://vimeo.com/741992397/8e3ddb9d45)
 
-If any issue with google drive video, i also uploaded zipped version here below:
+If any issue with vimeo video, i also uploaded zipped version here below:
 
-https://github.com/dhruza88/Social-Network-API/blob/main/server.js%20-%20Social-Network-API%20-%20Visual%20Studio%20Code%202022-08-19%2020-02-24.zip
+(https://github.com/dhruza88/Social-Network-API/blob/main/New%20Recording%20-%208_22_2022%2C%2011_49_21%20AM.webm)
 
 Updated Screenshots Below:
 
