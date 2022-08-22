@@ -51,7 +51,7 @@ download it and start entering in some information.
 [https://www.github.com/dhruza88](https://www.github.com/dhruza88) <br />
 davidhruza@gmail.com
 
-**KEYNOTE Link Below to Video Demonstration:
+** Link Below to Video Demonstration:**
 
 (https://vimeo.com/741992397/8e3ddb9d45)
 
